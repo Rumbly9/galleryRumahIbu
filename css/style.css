@@ -1,0 +1,135 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/*LAYOUT
+/*******************************************/
+.wrapper{
+  width: 600px;
+}
+
+.flexCont{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.flexItem{
+  flex: 1;
+}
+
+.gridCont{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: auto;
+  gap: 5% 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 100%;
+}
+
+/******************************************
+/*STYLE
+/*******************************************/
+.cont{
+  margin-top: 1%;
+}
+/* ###### Head area ###### */
+.navbar{
+  margin-top: 0;
+  margin-bottom: 0;
+  background: rgba(23,180,123,1);
+  width: 100%;
+  min-height: 30px;
+  text-align: right;
+}
+
+nav>div.flexCont{
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav span{
+  margin: 1%;
+}
+
+header.flexCont{
+  margin-top: 0;
+  background: rgba(5,96,63,1);
+  width: 100%;
+  min-height: 210px;
+}
+
+.headLogo>img{
+  width: 35%;
+  margin-top: 2%;
+}
+
+.headTitle{
+  text-align: center;
+  margin-bottom: 2%;
+}
+/* ###### Product area ###### */
+.circ{
+  width: 11rem;
+  height: 11rem;
+  margin: 0.5rem;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-blend-mode: overlay;
+}
+
+.fashion{
+  background: url("../assets/mainPage/fashion.jpg") rgba(0,0,0,0.2);
+  background-size: cover;
+}
+
+.rumah{
+  background: url("../assets/mainPage/rumah.jpg") rgba(0,0,0,0.2);
+  background-size: cover;
+}
+
+.hobby{
+  background: url("../assets/mainPage/hobby.jpg") rgba(0,0,0,0.2);
+  background-size: cover;
+}
+
+.gridItem>img{
+  border-radius: 2%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+*{
+  /* border: 1px solid red !important; */
+}
